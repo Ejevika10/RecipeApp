@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_corner"
+    android:backgroundTint="#ffffff"
+    android:layout_margin="10dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comment_icon"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/alata"
+        android:textSize="25sp"
+        android:text="TextView"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="5dp"
+        android:layout_weight = "1"
+        />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/authorComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight = "1"
+        android:textSize="17sp"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/commentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_weight = "1"
+        android:text="dd/MM/yyyy"
+        android:textSize="17sp"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+         />
+
+</LinearLayout>

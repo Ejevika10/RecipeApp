@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_corner"
+    android:backgroundTint="#ffffff"
+    android:layout_margin="10dp"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/itemListImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:background="@drawable/image"
+        android:adjustViewBounds="true"
+        app:shapeAppearanceOverlay="@style/roundImageView"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+
+        >
+        <TextView
+            android:id="@+id/itemListName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/alata"
+            android:textSize="25sp"
+            android:text="TextView"
+            android:layout_weight = "1"
+            />
+
+        <TextView
+            android:id="@+id/itemAvgRating"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/alata"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="0.0"
+            android:paddingHorizontal="5dp"
+            android:paddingBottom="5dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/star_filled"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/itemListTime"
+            android:drawableLeft="@drawable/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight = "1"
+            android:textSize="17sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itemListDiff"
+            android:drawableLeft="@drawable/cook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itemListPrice"
+            android:drawableLeft="@drawable/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    </LinearLayout>
